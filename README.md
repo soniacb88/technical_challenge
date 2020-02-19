@@ -17,8 +17,8 @@ Las rutas de end-points son:
 Las rutas de end-points son: 
 <li>"/" => Muestra todos los usuarios de la base de datos.</li>
 <li>"/create" => Muestra el formulario de creación de nuevo usuario.</li> 
-<li>"/edit/:id => Muestra el formulario para editar algunos de los datos de un usuario en concreto.</li>
-<li>"/:id => Muestra el componente de detalles de un usuario concreto.</li>
+<li>"/edit/:id" => Muestra el formulario para editar algunos de los datos de un usuario en concreto.</li>
+<li>"/:id" => Muestra el componente de detalles de un usuario concreto.</li>
 </ul>
 Se pueden acceder a los detalles de cada usuario pinchando sobre su nombre. Para editar y eliminar se puede hacer bien desde la página de detalles, o directamente desde la lista de usuarios, a través del link a editar o eliminar.
 
