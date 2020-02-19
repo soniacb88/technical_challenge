@@ -56,20 +56,22 @@ export default class UserDetails extends Component {
     render() {
 
         return (
-            <div className="container" style={{"height": "100vh","width":"70vw", "display":"flex","flexDirection":"column", "justifyContent":"center", "alignItems":"center"}}>
-                <div className="contenedor" style={{"height": "80vh","color":"white","width":"60vw" ,"backgroundColor": "#1d1c1d", "flexDirection":"row" }}>
-                    
-                    <h5 style={{"color":"white", "textAlign":"center","margin-top":"40px", "fontSize":"30px"}}>Detalles de usuario</h5>
-                    <div style={{"textAlign":"center", "margin-top":"60px"}}>
-                    <h6>Nombre de usuario: {this.state.username}</h6>
-                    <h6>Fecha de nacimiento: {this.state.birthdate.toLocaleString().substring(0, 8)}</h6>
+            <div style={{ "width": "100vw", "height": "100vh", "background-image": "linear-gradient(to right,#575b7f, #cc6f85)" }}>
+            <div className="container" style={{ "height": "100vh", "width": "70vw", "display": "flex", "flexDirection": "column", "justifyContent": "center", "alignItems": "center" }}>
+                <div className="contenedor" style={{ "height": "30vh", "color": "black", "width": "30vw", "backgroundColor": "#f4f5f7", "flexDirection": "row" }}>
+
+                    <h5 style={{ "color": "black", "textAlign": "center", "margin-top": "40px", "fontSize": "30px" }}>Detalles de usuario</h5>
+                    <div style={{ "textAlign": "center", "margin-top": "60px" }}>
+                        <h6>*Nombre de usuario: {this.state.username}</h6>
+                        <h6>*Fecha de nacimiento: {this.state.birthdate.toLocaleString().substring(0, 8)}</h6>
+                    </div>
                 </div>
-                </div>
-                <div className="botones" style={{"flexDirection":"row", "margin-top":"20px"}}>
-                    <button type="button" class="btn btn-warning"><a href={'/edit/' + this.state.id} style={{ 'text-decoration': "none" }}>Editar</a></button>
-                    <button type="button" class="btn btn-danger" onClick={() => this.deleteUser(this.state.id)}>Borrar</button>
+                <div className="botones" style={{ "flexDirection": "row", "margin-top": "20px" }}>
+                    <a href={'/edit/' + this.state.id} className="btn btn-outline-success" style={{ 'text-decoration': "none", "margin-right": "10px" }}>Editar</a>
+                    <button type="button" class="btn btn-outline-danger" onClick={() => this.deleteUser(this.state.id)}>Borrar</button>
                 </div>
             </div>
+             </div>
         )
     }
 

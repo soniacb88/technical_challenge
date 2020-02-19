@@ -77,7 +77,8 @@ export default class EditUser extends Component {
 
     render() {
         return (
-            <div  style={{"display":"flex","flexDirection":"column", "justifyContent":"center", "alignItems":"center"}}>
+            <div style={{"width":"100vw", "height":"100vh", "background-image": "linear-gradient(to right,#575b7f, #cc6f85)"}}>
+            <div  style={{"display":"flex","flexDirection":"column", "justifyContent":"center", "alignItems":"center", "margin-top":"70px"}}>
             <Form className="bg-light has-shadow col-6 m-5 px-5 rounded">
                 <header className="d-flex flex-column">
                     <div className="mb-3 text-center">
@@ -111,6 +112,7 @@ export default class EditUser extends Component {
                     <a href="/" className="btn btn-outline-dark mb-3">Volver a lista de usuarios</a>
                 </div>
             </Form>
+            </div>
             </div>
 
         )
