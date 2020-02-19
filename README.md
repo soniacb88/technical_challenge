@@ -3,7 +3,7 @@
 
 La finalidad del proyecto era hacer un CRUD de una base de datos de usuarios.
 
-## En la parte del Back he trabajado con Node.JS, y Express y como base de datos he usado MongoDB.
+## En la parte del Back he trabajado con Node.JS, y Express y como base de datos he usado MongoDB :open_file_folder:.
 <ul>
 Las rutas de end-points son:
 <li>GET ALL: Muestra todos los usuarios </li>
@@ -12,8 +12,8 @@ Las rutas de end-points son:
 <li>REMOVE: Elimina un usuario </li>
   </ul>
 
-## En la parte del Front he usado React.JS para poder conseguir que la app fuera una SPA.
-:computer:
+## En la parte del Front he usado React.JS para poder conseguir que la app fuera una SPA :computer:.
+
 <ul>
 Las rutas de end-points son: 
 <li>"/" => Muestra todos los usuarios de la base de datos.</li>
@@ -26,4 +26,7 @@ Se pueden acceder a los detalles de cada usuario pinchando sobre su nombre. Para
 He usado Bootstrap y React-bootstrap porque lo usé en el último proyecto de Ironhack y me encantó. 
 Los formularios tienen la valicación de completar los campos obligatoriamente. 
 
-Los test unitarios no sé hacerlos :(
+Los test unitarios no sé hacerlos :confused:
+Me encantaría aprender a hacer las cosas que no he sabido. 
+
+Me ha servido mucho el proyecto para aclarar y afianzar mis ideas. Ha sido muy divertido hacerlo. :heart:
