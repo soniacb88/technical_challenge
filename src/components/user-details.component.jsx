@@ -57,7 +57,7 @@ export default class UserDetails extends Component {
 
         return (
             <div style={{ "width": "100vw", "height": "100vh", "background-image": "linear-gradient(to right,#575b7f, #cc6f85)" }}>
-            <div className="container" style={{ "height": "100vh", "width": "70vw", "display": "flex", "flexDirection": "column", "justifyContent": "center", "alignItems": "center" }}>
+            <div className="container" style={{"height": "100vh", "width": "70vw", "display": "flex", "flexDirection": "column", "justifyContent": "center", "alignItems": "center" }}>
                 <div className="contenedor" style={{ "height": "30vh", "color": "black", "width": "30vw", "backgroundColor": "#f4f5f7", "flexDirection": "row" }}>
 
                     <h5 style={{ "color": "black", "textAlign": "center", "margin-top": "40px", "fontSize": "30px" }}>Detalles de usuario</h5>
