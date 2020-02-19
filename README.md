@@ -1,5 +1,5 @@
 
-# Proyecto para entrevista técnica de INNOCV.
+# Proyecto para INNOCV.
 
 La finalidad del proyecto era hacer un CRUD de una base de datos de usuarios.
 
@@ -13,6 +13,7 @@ Las rutas de end-points son:
   </ul>
 
 ## En la parte del Front he usado React.JS para poder conseguir que la app fuera una SPA.
+:computer:
 <ul>
 Las rutas de end-points son: 
 <li>"/" => Muestra todos los usuarios de la base de datos.</li>
