@@ -7,9 +7,9 @@ La finalidad del proyecto era hacer un CRUD de una base de datos de usuarios.
 
 Las rutas de end-points son:
 GET ALL: Muestra todos los usuarios \
-GET: detalles específicos de un usuario\ 
+GET: detalles específicos de un usuario \ 
 CREATE: crea un nuevo usuario UPDATE: actualiza un usuario \
-REMOVE: Elimina un usuario. \
+REMOVE: Elimina un usuario \
 
 ## En la parte del Front he usado React.JS para poder conseguir que la app fuera una SPA.
 Las rutas de end-points son: 
