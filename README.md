@@ -3,7 +3,7 @@
 
 La finalidad del proyecto era hacer un CRUD de una base de datos de usuarios.
 
-##En la parte del Back he trabajado con Node.JS, y Express y como base de datos he usado MongoDB.
+##En la parte del *Back* he trabajado con Node.JS, y Express y como base de datos he usado MongoDB.
 
 Las rutas de end-points son: 
 GET ALL: Muestra todos los usuarios,
@@ -12,7 +12,7 @@ CREATE: crea un nuevo usuario
 UPDATE: actualiza un usuario y
 REMOVE: Elimina un usuario.
 
-##En la parte del Front he usado React.JS para poder conseguir que la app fuera una SPA. 
+##En la parte del *Front* he usado React.JS para poder conseguir que la app fuera una SPA. 
 Las rutas de end-points son: 
 "/" => Muestra todos los usuarios de la base de datos.
 "/create" => Muestra el formulario de creación de nuevo usuario.
