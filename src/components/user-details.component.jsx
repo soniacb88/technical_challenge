@@ -56,12 +56,16 @@ export default class UserDetails extends Component {
     render() {
 
         return (
-            <div>
-                <th>
-                    <tr>{this.state.username}</tr>
-                    <tr>{this.state.birthdate.toLocaleString().substring(0, 8)}</tr>
-                </th>
-                <div>
+            <div className="container" style={{"height": "100vh","width":"70vw", "display":"flex","flexDirection":"column", "justifyContent":"center", "alignItems":"center"}}>
+                <div className="contenedor" style={{"height": "80vh","color":"white","width":"60vw" ,"backgroundColor": "#1d1c1d", "flexDirection":"row" }}>
+                    
+                    <h5 style={{"color":"white", "textAlign":"center","margin-top":"40px", "fontSize":"30px"}}>Detalles de usuario</h5>
+                    <div style={{"textAlign":"center", "margin-top":"60px"}}>
+                    <h6>Nombre de usuario: {this.state.username}</h6>
+                    <h6>Fecha de nacimiento: {this.state.birthdate.toLocaleString().substring(0, 8)}</h6>
+                </div>
+                </div>
+                <div className="botones" style={{"flexDirection":"row", "margin-top":"20px"}}>
                     <button type="button" class="btn btn-warning"><a href={'/edit/' + this.state.id} style={{ 'text-decoration': "none" }}>Editar</a></button>
                     <button type="button" class="btn btn-danger" onClick={() => this.deleteUser(this.state.id)}>Borrar</button>
                 </div>

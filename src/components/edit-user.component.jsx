@@ -77,6 +77,7 @@ export default class EditUser extends Component {
 
     render() {
         return (
+            <div  style={{"display":"flex","flexDirection":"column", "justifyContent":"center", "alignItems":"center"}}>
             <Form className="bg-light has-shadow col-6 m-5 px-5 rounded">
                 <header className="d-flex flex-column">
                     <div className="mb-3 text-center">
@@ -85,8 +86,8 @@ export default class EditUser extends Component {
                     </div>
                 </header>
 
-
-                <form onSubmit={this.onSubmit} className="d-flex flex-column justify-content-center align-items-center">
+                <div style={{ "display":"flex","flexDirection":"column", "justifyContent":"center", "alignItems":"center"}}>
+                <form onSubmit={this.onSubmit} style={{ "display":"flex","flexDirection":"column", "justifyContent":"center", "alignItems":"center"}}>
                     <Form.Group controlId="formBasicInput"> </Form.Group>
                     <Form.Label className="mx-0 my-0">Nombre de usuario</Form.Label>
                     <input type="text" className="form-control form-control" name="username" value={this.state.username} onChange={this.onChangeUsername} />
@@ -96,20 +97,21 @@ export default class EditUser extends Component {
                     <Form.Label className="mx-0 my-0">Fecha de nacimiento</Form.Label>
 
                     <DatePicker className="form-control form-control-lg"
-                        selected={this.state.birthdate}
-                        onChange={this.onChangeBirthdate}
-                    />
+                        selected={this.state.birthdate} required
+                        onChange={this.onChangeBirthdate}/>
+
                     <div className="form-group">
-                        <input type="submit" value="Actualiza" className="btn btn-info mt-4" />
+                        <input type="submit" value="Actualiza" className="btn btn-outline-success mt-4" />
                     </div>
 
                 </form>
-
+                </div>
 
                 <div className="form-group bottom-section d-flex flex-column justify-content-center align-items-center">
-                    <a href="/" className="btn btn-sm btn-warning text-center outline-info mb-3">Volver a lista de usuarios</a>
+                    <a href="/" className="btn btn-outline-dark mb-3">Volver a lista de usuarios</a>
                 </div>
             </Form>
+            </div>
 
         )
     }

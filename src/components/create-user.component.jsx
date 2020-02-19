@@ -50,7 +50,8 @@ export default class CreateUser extends Component {
 
     render() {
         return (
-            <Form className="bg-light has-shadow col-6 m-5 px-5 rounded">
+            <div  style={{"display":"flex","flexDirection":"column", "justifyContent":"center", "alignItems":"center"}}>
+            <Form className="bg-light has-shadow col-6 m-5 px-5">
                 <header className="d-flex flex-column">
                     <div className="mb-3 text-center">
                         <h3>Crear usuario</h3>
@@ -58,7 +59,8 @@ export default class CreateUser extends Component {
                     </div>
                 </header>
 
-                <form onSubmit={this.onSubmit} className="d-flex flex-column justify-content-center align-items-center">
+<div style={{ "display":"flex","flexDirection":"column", "justifyContent":"center", "alignItems":"center"}}>
+                <form onSubmit={this.onSubmit} style={{ "display":"flex","flexDirection":"column", "justifyContent":"center", "alignItems":"center"}}>
                     <Form.Group controlId="formBasicInput"> </Form.Group>
                     <Form.Label className="mx-0 my-0">Nombre de usuario</Form.Label>
                     <input type="text" className="form-control form-control" name="username" value={this.state.username} onChange={this.onChangeUsername} required />
@@ -67,20 +69,22 @@ export default class CreateUser extends Component {
                     <Form.Group controlId="formBasicInput"> </Form.Group>
                     <Form.Label className="mx-0 my-0">Fecha de nacimiento</Form.Label>
 
-                    <DatePicker
+                    <DatePicker className="form-control form-control-lg"
                         selected={this.state.birthdate} required
                         onChange={this.onChangeBirthdate} />
 
                     <div className="form-group">
-                        <input type="submit" value="Guardar" className="btn btn-info mt-4"></input>
+                        <input type="submit" value="Guardar" className="btn btn-outline-success mt-4"></input>
                     </div>
                 </form>
+                </div>
 
                 <div className="form-group bottom-section d-flex flex-column justify-content-center align-items-center">
-                    <a href="/" className="btn btn-sm btn-warning mb-3">Volver a lista de usuarios</a>
+                    <a href="/" className="btn btn-outline-dark mb-3">Volver a lista de usuarios</a>
                 </div>
+           
             </Form>
-
+            </div>
         )
     }
 }
